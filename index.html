@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" />        
+        <meta name="description" content="An overview of new events in JellyMan the leatherback sea turtle and his friend's lives" />
+        <meta name="keywords" content="JellyMan, leatherback sea turtle, awesome" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Home | JellyMan &amp; Friends</title>
+        <!-- the following are stylesheets -->
+        <link href="stylesheets/body_header_footer_mobile.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheets/body_header_footer_tablet.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 425px)" />
+        <link href="stylesheets/body_header_footer_desktop.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 768px)"/>
+        <link href="stylesheets/content_mobile.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheets/content_tablet.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 425px)" />
+        <link href="stylesheets/content_desktop.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 768px)"/>
+        <!-- end of stylesheets -->
+        <!-- the following are favicons! -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5c2c04">
+        <meta name="msapplication-TileColor" content="#00a300">
+        <meta name="theme-color" content="#ffffff">
+        <!-- end of favicons -->      
+        <script src="javascript/jquery-3.6.0.min.js"></script>
+        <script src="javascript/script.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <!-- the top section of the page -->
+            <header>
+                <!-- beginning of alert banner -->
+                <div class="fixedheader">
+                    <div class="alertbanner">
+                        <p>Please follow me <a href="https://instagram.com/jellymanandfriends" target="_blank">@jellymanandfriends</a>!</p>
+                    </div>
+                    <!-- end of alert banner -->
+                    <!-- start code borrowed and adapted from https://stackoverflow.com/questions/35728178/align-one-image-in-center-and-one-on-right which is styled in the CSS -->
+                    <div id="nav_image_parent">
+                        <div id="nav_button_left">
+                            <input type="image" src="images/icons/hamburgerbutton.png" alt="show navigation links" id="navbutton" />
+                        </div>
+                        <div id="nav_image_center">
+                            <a href="index.html"><img src="images/icons/logo.png" alt="logo" id="logo" /></a>
+                        </div>
+                    </div>
+                    <!-- end borrowed code -->
+                    <nav id="nav" style="display: none;">
+                        <ul>
+                            <li><a href="index.html" class="onpage">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="friends.html">My Friends</a></li>
+                            <li><a href="timeline.html">Timeline</a></li>
+                            <li><a href="businesses/index.html">Businesses</a></li>
+                            <li><a href="#" onclick="comingSoon()">Music</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- end of nav bar -->
+                <!-- start code borrowed and adapted from https://www.w3schools.com/howto/howto_css_image_text.asp which help put an image with the page title on top -->
+                <div class="page_title_and_image">
+                    <img src="images/jellyman_portrait.jpg" alt="jellyman" class="pageimage" />
+                    <div class="pagetitle"><h1 id="time-greet"></h1></div>
+                </div>
+                <!-- end borrowed code -->
+            </header>
+            <!-- end of top section -->
+            <div id="flexbox-wrapper">
+                <!-- start of content -->
+                <div id="flexbox-home-content">
+                    <section>
+                        <h2>Hi! I'm JellyMan. Welcome to my awesome, shiny, new website!</h2>
+                        <img src="images/multi_device.png" alt="a laptop, tablet, and phone displaying jellymanandfriends.com homepage" class="homepage-example"/>
+                        <h3>After eight months of work, the #1 site to find info about me, my friends, and my businesses is (almost) complete! Here are a few highlights:</h3>
+                        <ul>
+                            <li>This website, built from scratch, is responsive to work on all of your devices.</li>
+                            <li>Visit the <a href="about.html">About</a> page to read my bio! You can also read about my friends' bios in the <a href="friends.html">My Friends</a> page.</li>
+                            <li>The <a href="timeline.html">Timeline</a> page chronicles my life story along with my friends. There is a lot to see!</li>
+                            <li>You can learn about my businesses at the <a href="businesses/index.html">Businesses</a> page, including the <a href="businesses/photobusiness.html">Photo Business</a> page where you can <a href="https://forms.gle/o7smnfEopRpHtRDt9">order your very own autographed picture of me and/or my friends!</a> Pick out a picture to print from the <a href="gallery.html">Gallery</a> page.</li>
+                            <li>As always, don't forget to leave feedback about my website with the Feedback Form, and reach out to me and my frinds from the <a href="contact.html">Contact</a> page!</li>
+                        </ul>
+                        <h3>Coming soon:</h3>
+                        <ul>
+                            <li>The Music page with all kinds of my Asom Disco Beets and more!</li>
+                            <li>More businesses, including Moby's Fitness Center and Chocolate Crinkle's Droplet Computer, Inc.</li>
+                            <li>More pictures in the Gallery page</li>
+                            <li>More stories in the Timeline page</li>
+                        </ul>
+                        <h2>Have fun exploring!!</h2>
+                    </section>
+                </div>
+                <!-- end of content -->
+                <!-- start of sidebar -->
+                <div id="flexbox-home-side">
+                    <aside>
+                        <h2>Here's the Latest:</h2>
+                        <h3>Important Dates:</h3>
+                        <ul>
+                            <li><strong>July 20</strong> <i>-- JellyMan's Birthday</i></li>
+                            <li><strong>August 30</strong> <i>-- Paco's Birthday</i></li>
+                        </ul>
+                        <hr />
+                        <h3>Newest Photo In Gallery:</h3>
+                        <a href="gallery.html#latest">
+                            <figure id="latest-side">
+                                <img src="images/gallery/jellyman_madeline.jpg" alt="jellyman and golden retriever puppy named madeline" title="Click to view in gallery" />
+                                <figcaption><i>Click to view in gallery...</i></figcaption>
+                            </figure>
+                        </a>
+                        <hr />
+                        <h3>Latest Story:</h3>
+                        <a href="timeline.html#latest">
+                            <p>JellyMan has a fairly popular computer repair business. He is good at it too and can do almost everything by himself. 
+                                But sometimes he has to tap into Chocolate Crinkle's vast computer resources (and skills). 
+                                Today, he was replacing a hard drive and performing a clean install of OS X 10.3 on an iBook G4. <i>click to read more...</i></p>
+                        </a>
+                    </aside>
+                </div>
+                <!-- end of sidebar -->
+            </div>
+            <!-- start of bottom section -->
+            <footer>
+                <ul>
+                    <li id="copyright"></li>
+                    <li><a href="whatsnew.html">What's New</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="https://forms.gle/hLHG4SKBARt2LFL5A" target="_blank">Website Feedback</a></li>
+                    <li><a href="policy.html">Policy</a></li>
+                </ul>
+            </footer>
+            <!-- end of bottom section -->
+        </div>
+    </body>
+</html>

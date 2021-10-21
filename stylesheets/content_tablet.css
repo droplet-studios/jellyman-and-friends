@@ -1,0 +1,6 @@
+.testimonial img {
+    max-width: 10%; /* makes testimonial image smaller realtive to screen size */
+}
+#savedplacebox {
+    width: 50%; /* makes box alerting saved place half width of screen */
+}

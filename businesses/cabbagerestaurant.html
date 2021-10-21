@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" />        
+        <meta name="description" content="JellyMan's restaurant'" />
+        <meta name="keywords" content="JellyMan, Paco, Emerald, Chocolat Mustache, Abby Cadabby, Cabbage Restaurant, Sugar Rush Band" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Cabbage Restaurant | JellyMan &amp; Friends</title>
+        <!-- the following are stylesheets -->
+        <link href="../stylesheets/body_header_footer_mobile.css" type="text/css" rel="stylesheet" />
+        <link href="../stylesheets/body_header_footer_tablet.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 425px)" />
+        <link href="../stylesheets/body_header_footer_desktop.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 768px)"/>
+        <link href="../stylesheets/content_mobile.css" type="text/css" rel="stylesheet" />
+        <link href="../stylesheets/content_tablet.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 425px)" />
+        <link href="../stylesheets/content_desktop.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 768px)"/>
+        <!-- end of stylesheets -->
+        <!-- the following are favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+        <link rel="manifest" href="../site.webmanifest">
+        <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5c2c04">
+        <meta name="msapplication-TileColor" content="#00a300">
+        <meta name="theme-color" content="#ffffff">
+        <!-- end of favicons -->      
+        <script src="../javascript/jquery-3.6.0.min.js"></script>
+        <script src="../javascript/script.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <!-- the top section of the page -->
+            <header>
+                <!-- beginning of nav bar -->
+                <div class="fixedheader">
+                    <!-- start code borrowed and adapted from https://stackoverflow.com/questions/35728178/align-one-image-in-center-and-one-on-right which is styled in the CSS -->
+                    <div id="nav_image_parent">
+                        <div id="nav_button_left">
+                            <input type="image" src="../images/icons/hamburgerbutton.png" alt="show navigation links" id="navbutton" />
+                        </div>
+                        <div id="nav_image_center">
+                            <a href="../index.html"><img src="../images/icons/logo.png" alt="logo" id="logo" /></a>
+                        </div>
+                    </div>
+                    <!-- end borrowed code -->
+                    <nav id="nav" style="display: none;">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../about.html">About</a></li>
+                            <li><a href="../friends.html">My Friends</a></li>
+                            <li><a href="../timeline.html">Timeline</a></li>
+                            <li><a href="index.html" class="onpage">Businesses</a></li>
+                            <li><a href="#" onclick="comingSoon()">Music</a></li>
+                            <li><a href="../gallery.html">Gallery</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- end of nav bar -->
+                <img src="../images/cabbage_restaurant_logo.png" alt="cabbage restaurant logo" class="businessheader" />
+            </header>
+            <!-- end of top section -->
+            <!-- start of content -->
+            <section>
+                <h1>Testimonials</h1>
+                <div class="testimonial">
+                    <img src="../images/paco_circle.png" class="testimonial" title="Paco Groovy" alt="paco groovy" />
+                    <p><strong>Food is out of this world! I made JellyMan a extra large taco with cheese and cabbage, and JellyMan made me an extra large pizza with cheese and cabbage. Cheese melts in my mouth and the cabbage is crunchy and delish! Will come again tomorrow.</strong><i> -- Paco Groovy</i></p>
+                </div>
+                <div class="testimonial">
+                    <img src="../images/jellyman_circle.png" class="testimonial" title="JellyMan Asom" alt="jellyman asom" />
+                    <p><strong>Wow it is so awesome! Paco made me a delicious and awesome mega taco with lots of cheese and cabbage! I made him a delicious mega pizza with cheese and cabbage! The taco is crunchy and the cheese is yummy. What awesome food! I also enjoy potato chips and soda from the awesome vending machine! Thank you Cabbage!!!!! Restaurant for such an awesome meal!</strong><i> -- JellyMan Asom</i></p>
+                </div>
+            </section>
+            <section class="top-info">
+                <div>
+                    <h1>Hours</h1>
+                    <ul>
+                        <li>Sunday: 9AM - 9PM</li>
+                        <li>Monday: 8AM - 9PM</li>
+                        <li>Tuesday: 8AM - 9PM</li>
+                        <li>Wednesday: 8AM - 9PM</li>
+                        <li>Thursday: 8AM - 9PM</li>
+                        <li>Friday: 8AM - 9PM</li>
+                        <li>Saturday: 9AM - 9PM</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Chefs and Staff</h1>
+                    <ul>
+                        <li>JellyMan Asom, head chef</li>
+                        <li>Emerald, guest head chef</li>
+                        <li>Paco Gr&umacr;v&imacr;, taco speciality chef</li>
+                        <li>Chcolat Mustache, French speciality chef</li>
+                        <li>Shorty, guest pastry chef</li>
+                        <li>Abby Cadabby, assistant chef</li>
+                        <li>Strawberry, head waiter</li>
+                        <li>Nicolo, assistant waiter</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Live Music</h1>
+                    <p>Look forward to LIVE music every day between 11AM and 1PM, and 6PM and 9PM! The Sugar Rush Band plays steel drum and carribean melodies that fill the air.</p>
+                    <ul>
+                        <li>JellyMan Asom: steel drums, piano</li>
+                        <li>Paco Gr&umacr;v&imacr;: ukelele, guitar, electric bass, voice</li>
+                        <li>Snappy: drum kit, steel drum</li>
+                        <li>UV Ray: general percussion, voice</li>
+                        <li>Boing: synth, stage</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="menu-table scrolltable">
+                <h1>Regular Menu</h1>
+                <table>
+                    <tr>
+                        <th colspan="2">Main Menu</th>
+                    </tr>
+                    <tr>
+                        <td>Cheese Pizza</td>
+                        <td>$25.00 for 1, $75.00 for 2</td>
+                    </tr>
+                    <tr>
+                        <td>Corn Soup</td>
+                        <td>$200.00 (S), $100.00 (M), $58.47 (L)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Calamata Olive Pasta</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Vegetarian Hamburger</td>
+                        <td>$30.00</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Appetizers</th>
+                    </tr>
+                    <tr>
+                        <td>Bread Stick</td>
+                        <td>$20.00 for 2, $25.00 for 1</td>
+                    </tr>
+                    <tr>
+                        <td>Salt</td>
+                        <td>$5.00 (1 tsp), $50.00 (1 TBS), $500.00 (1 pt)</td>
+                    </tr>
+                    <tr>
+                        <td>1 Ice Cream Scoop</td>
+                        <td>$35.00</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Beverages</th>
+                    </tr>
+                    <tr>
+                        <td>Tap Water</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Ice Water</td>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Orange Juice Tropicana</td>
+                        <td>$25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Milk</td>
+                        <td>$15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Soda Pop</td>
+                        <td>$40.00</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="menu-table scrolltable">
+                <h1>Cabbage Menu</h1>
+                <table>
+                    <tr>
+                        <th colspan="2">Salads</th>
+                    </tr>
+                    <tr>
+                        <td>Red Cabbage Salad</td>
+                        <td>$6.00</td>
+                    </tr>
+                    <tr>
+                        <td>Green Cabbage Salad</td>
+                        <td>$6.00</td>
+                    </tr>
+                    <tr>
+                        <td>Red and Green Cabbage Salad</td>
+                        <td>$7.00</td>
+                    </tr>
+                    <tr>
+                        <td>Green Cabbage Apple Salad</td>
+                        <td>$8.00</td>
+                    </tr>
+                    <tr>
+                        <td>Red Cabbage Apple Salad</td>
+                        <td>$8.00</td>
+                    </tr>
+                    <tr>
+                        <td>Red and Green Cabbage Apple Salad</td>
+                        <td>$9.00</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Main Menu</th>
+                    </tr>
+                    <tr>
+                        <td>Stir Fried Cabbage</td>
+                        <td>$12.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cabbage Soup with Cabbage Crostini</td>
+                        <td>$8.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cabbage Stew</td>
+                        <td>$9.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cabbage Curry</td>
+                        <td>$11.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cabbage Fritata with Pickled Cabbage</td>
+                        <td>$12.00</td>
+                    </tr>
+                    <tr>
+                        <td>Personal Cabbage Pizza</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Fresh Cabbage Pasta</td>
+                        <td>$13.00</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Desserts and Drinks</th>
+                    </tr>
+                    <tr>
+                        <td>Cabbage Ice Cream</td>
+                        <td>$6.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cabbage Cheese Cake</td>
+                        <td>$7.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cabbage Pie</td>
+                        <td>$6.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cabbage-Flavored Seltzer Water</td>
+                        <td>$3.00</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="menu-table scrolltable">
+                <h1>Chocolat Mustache's French Menu Special (2nd and 4th Tuesday of every month!)</h1>
+                <table>
+                    <tr>
+                        <th colspan="2">Assorted French Delicacies</th>
+                    </tr>
+                    <tr>
+                        <td>Macaron</td>
+                        <td>$2.50 for 1, $10.00 for 5</td>
+                    </tr>
+                    <tr>
+                        <td>Baguette</td>
+                        <td>$6.00</td>
+                    </tr>
+                    <tr>
+                        <td>Croissant</td>
+                        <td>$5.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cream Puff</td>
+                        <td>$7.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cheese Platter</td>
+                        <td>$25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Crepe with Cheese</td>
+                        <td>$8.00</td>
+                    </tr>
+                    <tr>
+                        <td>French Fry</td>
+                        <td>$9.00</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="menu-table scrolltable">
+                <h1>Paco Gr&umacr;v&imacr;'s Taco Menu Special</h1>
+                <table>
+                    <tr>
+                        <th colspan="2">Breakfast Tacos</th>
+                    </tr>
+                    <tr>
+                        <td>Ice Cream Taco</td>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Omelet Taco</td>
+                        <td>$15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Orange Juice Taco</td>
+                        <td>$15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Scrambled Egg Taco</td>
+                        <td>$15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Baked Potato Taco</td>
+                        <td>$25.00</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Lunch Tacos</th>
+                    </tr>
+                    <tr>
+                        <td>Cheese Taco</td>
+                        <td>$25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Dorito Taco</td>
+                        <td>$25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sandwich Taco</td>
+                        <td>$15.00</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Dinner Tacos</th>
+                    </tr>
+                    <tr>
+                        <td>Nacho Taco</td>
+                        <td>$25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cheesy Pasta Taco</td>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Potato Salad Taco</td>
+                        <td>$25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bean Soup Taco</td>
+                        <td>$15.00</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Dessert Tacos</th>
+                    </tr>
+                    <tr>
+                        <td>Chocolate Taco</td>
+                        <td>$30.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cookie Taco</td>
+                        <td>$30.00</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate Cake Taco</td>
+                        <td>$35.00</td>
+                    </tr>
+                    <tr>
+                        <td>Triple-Decker Knock-Your-Head-Off-Sweet Chocolate Ice Cream on Chocolate Cookie Layer Cake with Chocolate Icing and Chocolate Chip Taco</td>
+                        <td>$100.00</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">DIY Tacos</th>
+                    </tr>
+                    <tr>
+                        <td>Down Payment</td>
+                        <td>$30.00</td>
+                    </tr>
+                    <tr>
+                        <td>Shell</td>
+                        <td>+$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Lettuce</td>
+                        <td>+$5.00</td>
+                    </tr>
+                    <tr>
+                        <td>Beans</td>
+                        <td>+$5.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tomato</td>
+                        <td>+$5.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cheese</td>
+                        <td>+$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Doritos</td>
+                        <td>+$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate Ice Cream</td>
+                        <td>+$30.00</td>
+                    </tr>
+                </table>
+            </section>
+            <!-- end of content -->
+            <!-- start of bottom section -->
+            <footer>
+                <ul>
+                    <li id="copyright"></li>
+                    <li><a href="../whatsnew.html">What's New</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../sitemap.html">Site Map</a></li>
+                    <li><a href="https://forms.gle/hLHG4SKBARt2LFL5A" target="_blank">Website Feedback</a></li>
+                    <li><a href="../policy.html">Policy</a></li>
+                </ul>
+            </footer>
+            <!-- end of bottom section -->
+        </div>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+body {
+    background-color: #F6F6F6; /* sets overall bg color */
+    font-family: sans-serif; /* sets overall font */
+    max-width: 960px; /* sets maximum page width to 960px wide */
+    margin: 0px auto; /* centers page */
+}
+/* start code borrowed and adapted from https://stackoverflow.com/questions/34796085/how-to-stick-footer-to-bottom-not-fixed-even-with-scrolling/34796186 to put the footer on the bottom */
+#content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* end borrowed code */
+/* start code borrowed and adapted from https://stackoverflow.com/questions/35728178/align-one-image-in-center-and-one-on-right to center logo, hamburger button on left */
+#nav_image_parent {
+    text-align: center;
+    position: relative;
+}
+#nav_button_left {
+    position: absolute;
+}
+#nav_image_center {
+    display: inline-block;
+}
+/* end borrowed code */
+#logo {
+    height: 45px; /* changes width of logo proportional to height */
+    width: 45px; /* changes height of logo proportional to width */
+    margin-top: 5px; /* moves logo slightly away from top edge of page */
+}
+#navbutton {
+    height: 30px; /* changes height of hamburger button proportional to width */
+    width: 30px; /* changes width of hamburger button proportional to height */
+    margin: 10px 0px 0px 10px; /* maves hamburger button away from top and left of page */
+}
+.fixedheader {
+    background-color: #61b15a; /* sets bg color for whole header only */
+    position: fixed; /* keep header at top of screen even while scrolling */
+    z-index: 10; /* keeps header above other elements */
+    width: 100%; /* keeps header spanning whole page width */
+    max-width: 960px; /* sets max width of nav as 960px */
+}
+.alertbanner {
+    background-color: #b6cf5c; /* sets bg color of banner */
+    height: 30px; /* sets height of banner */
+}
+.alertbanner p {
+    margin-top: 0px; /* sets no margin above p so color goes to top */
+    padding: 10px; /* moves text away from banner edges */
+    color: white; /* sets banner color white */
+    font-weight: bold; /* sets banner text to bold */
+}
+.alertbanner a {
+    color: white; /* set banner link to white */
+}
+nav ul {
+    padding: 0px; /* removes unwanted default padding around the ul to center it */
+}
+nav li {
+    list-style-type: none; /* removes bullets from nav links */
+    padding-bottom: 10px; /* spaces out nav links while keeping bg color all the way */
+    padding-left: 10px; /* moves nav links away from left of page */
+    text-align: center; /* center nav links */
+}
+.onpage {
+    font-weight: bold; /* on page nav link is bold */
+    font-size: 18px; /* on page nav link is bigger */
+}
+nav a, footer a {
+    text-decoration: none; /* removes underline from links in nav and footer */
+    color: #ffffff; /* changes default color of links in nav and footer */
+}
+/* start code borrowed and adapted from https://www.w3schools.com/howto/howto_css_image_text.asp which help put an image with the page title on top */
+.page_title_and_image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.pageimage {
+    width: 100%;
+    margin-top: 50px;
+}
+.pagetitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-shadow: 4px 4px 5px black;
+}
+/* end borrowed code */
+.pagetitle h1 {
+    font-size: 50px; /* incresases header font size to 50px */
+}
+.businessheader {
+    max-width: 100%; /* header for business pages (images) takes up 100% width */
+    margin-top: 55px; /* margin above business header (logo img) */
+}
+footer {
+    margin-top: auto; /* this line also borrowed from https://stackoverflow.com/questions/34796085/how-to-stick-footer-to-bottom-not-fixed-even-with-scrolling/34796186 */
+    background-color: #61b15a; /* sets bg color of footer */
+    color: #ffffff; /* sets text color to white in footer */
+}
+footer ul{
+    padding-left: 10px; /* moves ul 10px away from edge instead of default 40px */
+}
+footer li {
+    list-style-type: none; /* removes bullets from footer links */
+    padding-bottom: 10px; /* spaces out footer links 10px */
+}

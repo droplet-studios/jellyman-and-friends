@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" />        
+        <meta name="description" content="JellyMan's restaurant'" />
+        <meta name="keywords" content="JellyMan, computer, computer reapir, broken computer, fix" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Computer Repair | JellyMan &amp; Friends</title>
+        <!-- the following are stylesheets -->
+        <link href="../stylesheets/body_header_footer_mobile.css" type="text/css" rel="stylesheet" />
+        <link href="../stylesheets/body_header_footer_tablet.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 425px)" />
+        <link href="../stylesheets/body_header_footer_desktop.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 768px)"/>
+        <link href="../stylesheets/content_mobile.css" type="text/css" rel="stylesheet" />
+        <link href="../stylesheets/content_tablet.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 425px)" />
+        <link href="../stylesheets/content_desktop.css" type="text/css" rel="stylesheet" media="only screen and (min-width: 768px)"/>
+        <!-- end of stylesheets -->
+        <!-- the following are favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+        <link rel="manifest" href="../site.webmanifest">
+        <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5c2c04">
+        <meta name="msapplication-TileColor" content="#00a300">
+        <meta name="theme-color" content="#ffffff">
+        <!-- end of favicons -->      
+        <script src="../javascript/jquery-3.6.0.min.js"></script>
+        <script src="../javascript/script.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <!-- the top section of the page -->
+            <header>
+                <!-- beginning of nav bar -->
+                <div class="fixedheader">
+                    <!-- start code borrowed and adapted from https://stackoverflow.com/questions/35728178/align-one-image-in-center-and-one-on-right which is styled in the CSS -->
+                    <div id="nav_image_parent">
+                        <div id="nav_button_left">
+                            <input type="image" src="../images/icons/hamburgerbutton.png" alt="show navigation links" id="navbutton" />
+                        </div>
+                        <div id="nav_image_center">
+                            <a href="../index.html"><img src="../images/icons/logo.png" alt="logo" id="logo" /></a>
+                        </div>
+                    </div>
+                    <!-- end borrowed code -->
+                    <nav id="nav" style="display: none;">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../about.html">About</a></li>
+                            <li><a href="../friends.html">My Friends</a></li>
+                            <li><a href="../timeline.html">Timeline</a></li>
+                            <li><a href="index.html" class="onpage">Businesses</a></li>
+                            <li><a href="#" onclick="comingSoon()">Music</a></li>
+                            <li><a href="../gallery.html">Gallery</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- end of nav bar -->
+                <img src="../images/computer_business_logo.png" alt="computer reapir business logo" class="businessheader" />
+            </header>
+            <!-- end of top section -->
+            <!-- start of content -->
+            <section>
+                <h1>Testimonials</h1>
+                <div class="testimonial">
+                    <img src="../images/emerald_circle.png" class="testimonial" title="Emerald" alt="emerald" />
+                    <p><strong>One day, my computer wouldn't power on and wouldn't make any sounds. For just $50, he informed me that I need to push the power button to turn on the computer! With it came the sound too. Incredible! I do not know how he does it.</strong><i> -- Emerald</i></p>
+                </div>
+                <div class="testimonial">
+                    <img src="../images/jellyman_circle.png" class="testimonial" title="JellyMan Asom" alt="jellyman asom" />
+                    <p><strong>I am very pleased with this repair business. I was fiddling around with my Dell XPS 730X tower and accidentally ended up taking it all apart, but I payed myself just $300 for 9 hours of work (I gave myself a special deal) to get it back together. Successful, reliable, and fast service because I gave special priority to myself. Would definitely use again!!!</strong><i> -- JellyMan Asom</i></p>
+                </div>
+            </section>
+            <section>
+                <h3>I provide reliable repair at a 99% repair rate! I repair all Macs and PCs and do all kinds of things like data transfer, parts replacement, liquid damage reapir, etc. Drop off your computer today at JellyMan's ASOM!!!!! Mall!</h3>
+            </section>
+            <section>
+                <h1>Hours</h1>
+                    <ul>
+                        <li>Sunday: 9AM - 9PM</li>
+                        <li>Monday: 8AM - 9PM</li>
+                        <li>Tuesday: 8AM - 9PM</li>
+                        <li>Wednesday: 8AM - 9PM</li>
+                        <li>Thursday: 8AM - 9PM</li>
+                        <li>Friday: 8AM - 9PM</li>
+                        <li>Saturday: 9AM - 9PM</li>
+                        <li>Drop-Off: 24/7 at the ASOM!!!!! Mall</li>
+                    </ul>
+            </section>
+            <section id="prices">
+                <h1>Prices (Subject to Change, Min. 1 hr.)</h1>
+                <table class="computerprice scrolltable">
+                    <tr>
+                        <th scope="col">Type</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                    <tr>
+                        <td>Not Broken</td>
+                        <td>$50.00/hour</td>
+                        <td>
+                            <figure>
+                                <img src="../images/notbroken.png" title="Not Broken Computer" alt="laptop in good shape" />
+                                <figcaption>A fully functional computer, the only problem is user error</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A Little Bit Broken</td>
+                        <td>$100.00/hour</td>
+                        <td>
+                            <figure>
+                                <img src="../images/littlebroken.jpg" title="Little Bit Broken Computer" alt="laptop in good shape but a minor issue" />
+                                <figcaption>A fully functional computer, an easy fix is required to make it fully functional</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Broken</td>
+                        <td>$150.00/hour</td>
+                        <td>
+                            <figure>
+                                <img src="../images/broken.jpg" title="Broken Computer" alt="laptop with a large issue" />
+                                <figcaption>A computer that has a major issue that makes it not function</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Really Broken</td>
+                        <td>$250.00/hour</td>
+                        <td>
+                            <figure>
+                                <img src="../images/reallybroken.jpg" title=" ReallyBroken Computer" alt="laptop with a large issue in very poor condition" />
+                                <figcaption>A computer that has a many major issues that makes it not function</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Irrepairable</td>
+                        <td>$500.00/hour</td>
+                        <td>
+                            <figure>
+                                <img src="../images/irrepairable.jpg" title="Irrepairable Computer" alt="demolished laptop in terrible condition" />
+                                <figcaption>A computer that has so many major issues that repairing it successfully is very unlikely</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <!-- end of content -->
+            <!-- start of bottom section -->
+            <footer>
+                <ul>
+                    <li id="copyright"></li>
+                    <li><a href="../whatsnew.html">What's New</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../sitemap.html">Site Map</a></li>
+                    <li><a href="https://forms.gle/hLHG4SKBARt2LFL5A" target="_blank">Website Feedback</a></li>
+                    <li><a href="../policy.html">Policy</a></li>
+                </ul>
+            </footer>
+            <!-- end of bottom section -->
+        </div>
+    </body>
+</html>
