@@ -1,6 +1,8 @@
 .testimonial img {
     max-width: 10%; /* makes testimonial image smaller realtive to screen size */
 }
+/* ***** removed feature *****
 #savedplacebox {
-    width: 50%; /* makes box alerting saved place half width of screen */
+    width: 50%; makes box alerting saved place half width of screen
 }
+*/

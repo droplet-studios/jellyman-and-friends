@@ -54,9 +54,11 @@ a:hover {
     margin-left: 10px; /* space btwn border */
     border-top: none; /* removes border from block layout in tablet and mobile */
 }
+/* ***** removed feature *****
 #savedplacebox {
-    width: 300px; /* fixed width on desktop for saved place alert b/c it can be way to wide */
+    width: 300px; fixed width on desktop for saved place alert b/c it can be way to wide
 }
+*/
 #clear:hover, #hideshowlist:hover {
     cursor: grab; /* different cursor for clear saved place, hiding and showing list */
 }

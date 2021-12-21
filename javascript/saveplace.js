@@ -10,17 +10,17 @@ $(function() {
     setTimeout(function() {
         $("#savedplacebox").fadeOut();
     }, 3000);
-    $("#timeline li").eq(index - 1).css("font-weight", "bold");
+    $(".timeline li").eq(index).css("font-weight", "bold");
     $("#lastread").html("You were on #" + index);
     if(index != 1) {
-        $("#timeline li").eq(index - 2).attr("id", "last");
+        $(".timeline li").eq(index - 1).attr("id", "last");
     } else {
         $("#lastreadlink").attr("href", "#");
     } /* end of if/else to set id of story relative to last read */
     } else {
     $("#clear").hide();
     } /* end of function if story has been clicked before */
-    $("#timeline li").click(function() {
+    $(".timeline li").click(function() {
         localStorage.removeItem("index");
         var index = $(this).index();
         var clicked = true;
@@ -31,12 +31,12 @@ $(function() {
         setTimeout(function() {
             $("#savedplacebox").fadeOut();
         }, 3000); // end if saved place box fade setTimeout   
-        $("#timeline li").css("font-weight", "normal");
-        $("#timeline li").eq(index - 1).css("font-weight", "bold");
+        $(".timeline li").css("font-weight", "normal");
+        $(".timeline li").eq(index).css("font-weight", "bold");
         $("#lastread").html("You were on #" + index);
-        $("#timeline li").attr("id", ""); /* clear all id when another story is clicked */
+        $(".timeline li").attr("id", ""); /* clear all id when another story is clicked */
         if(index != 1) {
-            $("#timeline li").eq(index - 2).attr("id", "last");
+            $(".timeline li").eq(index - 1).attr("id", "last");
             $("#lastreadlink").attr("href", "#last");
         } else {
             $("#lastreadlink").attr("href", "#");

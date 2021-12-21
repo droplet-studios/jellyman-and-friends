@@ -133,16 +133,56 @@ table img {
 table tr:hover {
     background-color: grey; /* highlight color on hover for tr */
 }
+/* ***** removed feature *****
 #savedplacebox {
-    position: fixed; /* saved place alert box fixed pos. */
-    bottom: 10px; /* fixed sitance from bottom and right */
+    position: fixed; saved place alert box fixed pos.
+    bottom: 10px; fixed sitance from bottom and right
     right: 10px;
-    width: 75%; /* 75% width on mobile screens */
-    height: 60px; /* fixed height */
-    padding-top: 35px; /* space on top so text isn't touching top */
-    background-color: #61b15a; /* color of the box to match nav bar and footer */
-    color: white; /* white text color */
-    border: 1px solid black; /* border around the box to set it apart */
-    display: none; /* auto hide until needed */
-    text-align: center; /* center text in the box */
+    width: 75%; 75% width on mobile screens
+    height: 60px; fixed height
+    padding-top: 35px; space on top so text isn't touching top
+    background-color: #61b15a; color of the box to match nav bar and footer
+    color: white; white text color
+    border: 1px solid black; border around the box to set it apart
+    border-radius: 5px;
+    display: none; auto hide until needed
+    text-align: center; center text in the box
 }
+*/
+/* Safari, Chrome, and Opera */
+@-webkit-keyframes flashborder {
+    0% {border: 3px dashed #0874fc;} /* border */
+    100% {border: 3px solid #0874fc;} /* no border */
+}
+/* Firefox */
+@-moz-keyframes flashborder {
+    0% {border: 3px dashed #0874fc;} /* border */
+    100% {border: 3px solid #0874fc;} /* no border */
+}
+@keyframes flashborder {
+    0% {border: 3px dashed #0874fc;} /* border */
+    100% {border: 3px solid #0874fc;} /* no border */
+}
+#sale {
+    padding: 10px; 
+    border: 3px dashed #0874fc; /* fallback */
+    animation: flashborder 2s infinite;
+    margin: 10px; /* so the border doesn't press against the edge of the viewport */
+}
+/* does not work :(
+Firefox
+progress::-moz-progress-bar {
+    background: orange;
+}
+Safari, Chrome, and Opera
+progress::-webkit-progress-value {
+    background: orange; 
+}
+progress::-webkit-progress-bar {
+    background: orange; 
+}
+Internet Explorer
+#sale progress {
+    color: orange;
+}
+*/
