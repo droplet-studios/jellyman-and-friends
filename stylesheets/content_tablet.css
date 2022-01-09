@@ -6,3 +6,6 @@
     width: 50%; makes box alerting saved place half width of screen
 }
 */
+#orderphoto {
+    font-size: 20pt; /* font size of button text */
+}

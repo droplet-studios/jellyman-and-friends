@@ -24,7 +24,7 @@ nav a:hover, footer a:hover {
 .pagetitle {
     transform: translate(-50%, -45%); /* centers title over header and shifts it up 45% */
 }
-.pagetitle h1 {
+.pagetitle p {
     font-size: 75px; /* increases font size of header title to 75px */
 }
 footer li {

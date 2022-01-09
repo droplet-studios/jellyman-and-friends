@@ -39,18 +39,20 @@ body {
     z-index: 10; /* keeps header above other elements */
     width: 100%; /* keeps header spanning whole page width */
     max-width: 960px; /* sets max width of nav as 960px */
+    border-bottom-left-radius: 10px; /* these add rounding to the nav bar bottom corners */
+    border-bottom-right-radius: 10px;
 }
-.alertbanner {
+#alertbanner {
     background-color: #b6cf5c; /* sets bg color of banner */
     height: 30px; /* sets height of banner */
 }
-.alertbanner p {
+#alertbanner p {
     margin-top: 0px; /* sets no margin above p so color goes to top */
     padding: 10px; /* moves text away from banner edges */
     color: white; /* sets banner color white */
     font-weight: bold; /* sets banner text to bold */
 }
-.alertbanner a {
+#alertbanner a {
     color: white; /* set banner link to white */
 }
 nav ul {
@@ -88,8 +90,9 @@ nav a, footer a {
     text-shadow: 4px 4px 5px black;
 }
 /* end borrowed code */
-.pagetitle h1 {
+.pagetitle p {
     font-size: 50px; /* incresases header font size to 50px */
+    font-weight: bold;
 }
 .businessheader {
     max-width: 100%; /* header for business pages (images) takes up 100% width */
@@ -99,6 +102,8 @@ footer {
     margin-top: auto; /* this line also borrowed from https://stackoverflow.com/questions/34796085/how-to-stick-footer-to-bottom-not-fixed-even-with-scrolling/34796186 */
     background-color: #61b15a; /* sets bg color of footer */
     color: #ffffff; /* sets text color to white in footer */
+    border-top-left-radius: 10px; /* these round top corners of footer */
+    border-top-right-radius: 10px;
 }
 footer ul{
     padding-left: 10px; /* moves ul 10px away from edge instead of default 40px */

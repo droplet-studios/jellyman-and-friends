@@ -1,9 +1,13 @@
+/*
 function comingSoon() {
   alert("I will launch my music page very soon. You will be able to listen to my asom disco beets and tunes, as well as see me dance. Please check back later!");
 }
+
 function comingSoonDroplet() {
   alert("Coming soon: Chocolate Crinkle Cookie's world famous computer company, Droplet Computer, Inc. will have a website soon! Stay tuned for details!");
 }
+*/
+
 $(function() {
 
   /* on all pages */
@@ -36,7 +40,7 @@ $(function() {
     $("#time-greet").html("Good morning!");
   } else if (currentHour >= 12 && currentHour < 18) {
     $("#time-greet").html("Good afternoon!");
-  } /* end of if-else statement to show and hide the nav bar */
+  } /* end of if-else statement to change homepage greeting */
 
 
   /* following code borrowed from https://stackoverflow.com/questions/149055/how-to-format-numbers-as-currency-strings */
@@ -142,5 +146,12 @@ $(function() {
     }, 3000); // end of addbutton setTimeout
   }); /* end of add button click function */
 
-	
+  /* businesses */
+  $("#droplet").click(function() {
+    alert("Coming soon: Chocolate Crinkle Cookie's world famous computer company, Droplet Computer, Inc. will have a website soon! Stay tuned for details!");
+  });
+
+  $("#music").click(function() {
+    alert("I will launch my music page very soon. You will be able to listen to my asom disco beets and tunes, as well as see me dance. Please check back later!");
+  });
 }); /* end of ready function */

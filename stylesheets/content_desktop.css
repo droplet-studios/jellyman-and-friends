@@ -62,3 +62,12 @@ a:hover {
 #clear:hover, #hideshowlist:hover {
     cursor: grab; /* different cursor for clear saved place, hiding and showing list */
 }
+#orderphoto {
+    transition: background-color 0.5s; /* bg color of button photo order form */
+    /*transition: color 0.5s;*/
+}
+#orderphoto:hover {
+    background-color: white; /* transition result */
+    color: black; /* sets color of photo order button when background is white */
+    cursor: pointer; /* sets cursor to pointer when hover over button */
+}

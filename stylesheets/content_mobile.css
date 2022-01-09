@@ -186,3 +186,16 @@ Internet Explorer
     color: orange;
 }
 */
+#button {
+    margin: 0px auto; /* centers button container */
+    width: 100%; /* container takes up full width */
+    max-width: 250px; /* container element won't be wider than 250px */
+}
+#orderphoto {
+    height: 50px; /* fixed height of button */
+    width: 100%; /* button fills up container */
+    background-color: #61b15a; /* bg of button */
+    border-radius: 10px; /* rounds corners of button */
+    color: white; /* sets text color of button */
+    font-size: 10pt; /* font size of button text */
+}
