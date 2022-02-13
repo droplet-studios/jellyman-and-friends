@@ -1,3 +1,6 @@
+h1 {
+    margin-left: 10px; /* moves page headers away from side of viewport */
+}
 .page-top {
     margin-top: 60px; /* prevents page titles from getting blocked behind nav bar */
 }
@@ -199,3 +202,18 @@ Internet Explorer
     color: white; /* sets text color of button */
     font-size: 10pt; /* font size of button text */
 }
+
+/* flexbox gallery start */
+/* thanks for the help from this thread: https://stackoverflow.com/questions/71057640/flexbox-gallery-with-wrapping */
+#gallerypics {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gal-cell {
+    width: 100%;
+}
+.gal-cell img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+/* flexbox gallery end */
