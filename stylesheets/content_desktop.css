@@ -71,6 +71,6 @@ a:hover {
     color: black; /* sets color of photo order button when background is white */
     cursor: pointer; /* sets cursor to pointer when hover over button */
 }
-.gal-cell {
+.gal-col {
     width: 33%; /* for flexbox gallery */
 }

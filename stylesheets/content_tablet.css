@@ -9,6 +9,6 @@
 #orderphoto {
     font-size: 20pt; /* font size of button text */
 }
-.gal-cell {
+.gal-col {
     width: 50%; /* for flexbox gallery */
 }

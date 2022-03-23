@@ -209,10 +209,10 @@ Internet Explorer
     display: flex;
     flex-wrap: wrap;
 }
-.gal-cell {
+.gal-col {
     width: 100%;
 }
-.gal-cell img {
+.gal-col img {
     vertical-align: middle;
     max-width: 100%;
 }
