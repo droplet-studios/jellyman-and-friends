@@ -1,0 +1,33 @@
+nav {
+    display: block !important; /* forces nav to display */
+}
+nav li {
+    display: inline; /* displays nav links inline */
+}
+nav a, footer a {
+    transition: color 0.5s; /* on desktops creates a smooth color change on links */
+}
+nav a:hover, footer a:hover {
+    color: black; /* on hover, links turn black */
+}
+#nav_button_left {
+    display: none; /* hides hamburger button */
+}
+#nav_image_center {
+    float: left; /* puts logo on left side of page */
+    margin-left: 10px; /* shifts logo 10px away from left edge of page */
+}
+.pageimage {
+    object-position: 0 50%; /* shifts header image down 50% */
+    height: 400px; /* sets height of header image to 400px */
+}
+.pagetitle {
+    transform: translate(-50%, -45%); /* centers title over header and shifts it up 45% */
+}
+.pagetitle h1 {
+    font-size: 75px; /* increases font size of header title to 75px */
+}
+footer li {
+    margin-right: 10px; /* spaces footer links out by 10px */
+    display: inline; /* displays footer links inline */
+}

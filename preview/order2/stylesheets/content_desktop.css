@@ -1,0 +1,95 @@
+a {
+    transition: color 0.5s; /* makes a transition for link's color */
+}
+a:hover {
+    color: #61b15a; /* changes link color on hover */
+}/* code borrowed and adapted from https://www.w3schools.com/howto/howto_js_image_grid.asp */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 0 4px;
+}
+.column img, .column figure {
+    display: inline;
+    margin: 0px;
+    vertical-align: middle;
+    max-width: 49%;
+}
+/* end borrowed code */
+.bio img {
+    max-width: 40%; /* sets max width of img to take up 40% */
+    margin: 0px 40px 40px 10px; /* margin so text doesn't go against img */
+    float: left; /* puts the bio pic on the left of the screen */
+}
+.bio ul {
+    overflow: hidden; /* bio list doesn't wrap around picture */
+}
+.bio li {
+    margin-bottom: 10px; /* adds space between bio list */
+}
+.top-info {
+    display: flex; /* put 3 divs next to each other @ top */
+}
+.top-info div {
+    width: 33%; /* each div takes up 3rd of width */
+    padding: 10px; /* padding btwn columns of info */
+}
+#flexbox-wrapper {
+    display: flex; /* makes homepage a flexbox */
+}
+#flexbox-home-content {
+    width: 66%; /* main homepage content takes up 2/3 */
+    display: inline-block; /* sits next to aside */
+    margin-right: 5px; /* space between aside */
+    border-right: 1px dashed black; /* border btwn aside */
+}
+#flexbox-home-side {
+    width: 33%; /* aside takes up 1/3 */
+    display: inline-block; /* sits next to main homepage content */
+    margin-left: 10px; /* space btwn border */
+    border-top: none; /* removes border from block layout in tablet and mobile */
+}
+/* ***** removed feature *****
+#savedplacebox {
+    width: 300px; fixed width on desktop for saved place alert b/c it can be way to wide
+}
+*/
+#clear:hover, #hideshowlist:hover {
+    cursor: grab; /* different cursor for clear saved place, hiding and showing list */
+}
+#orderphoto {
+    transition: background-color 0.5s; /* bg color of button photo order form */
+    /*transition: color 0.5s;*/
+}
+#orderphoto:hover {
+    background-color: white; /* transition result */
+    color: black; /* sets color of photo order button when background is white */
+    cursor: pointer; /* sets cursor to pointer when hover over button */
+}
+.gal-cell {
+    width: 33%;
+}
+
+/* New */
+#photo-viewer-outer-wrap {
+    display: flex;
+}
+#photo-viewer-inner-wrap-left {
+    max-width: 66%;
+}
+#photo-viewer-inner-wrap-right {
+    display: flex;
+    overflow-y: scroll;
+    max-height: 300px;
+    clear: both;
+    max-width: 33%;
+}
+#photo-viewer-inner-wrap-right img {
+    max-width: 30%;
+    display: inline;
+}

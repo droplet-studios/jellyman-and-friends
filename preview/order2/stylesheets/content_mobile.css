@@ -1,0 +1,247 @@
+.page-top {
+    margin-top: 60px; /* prevents page titles from getting blocked behind nav bar */
+}
+a {
+    color: black; /* sets link in body to black */
+}
+.homepage-example {
+    max-width: 100%; /* makes homepage main img 100% container w */
+    margin: 0px auto; /* centers it */
+}
+section {
+    padding: 8px; /* puts space btwn content and edge of page */
+}
+.bio img {
+    max-width: 90%; /* sets maximum width of bio images as 90% */
+    display: block; /* makes img block instead of inline */
+    margin: 0px auto; /* centers img */
+}
+#gallerypics img {
+    max-width: 90%; /* sets max width of the img and caption to 90% width */
+    margin: 10px auto; /* centers image with 10px margin top and bottom */
+    display: block; /* sets img as block level element */
+}
+#gallerypics figcaption {
+    text-align: center; /* centers caption text */
+}
+.column img {
+    max-width: 90%; /* makes images take up most of page width */
+    display: block; /* makes img block element */
+}
+.businesslogos img {
+    display: block; /* makes business logos to block */
+    margin: 0px auto; /* centers business logos */
+}
+.timeline li, #faq li, #online li, #store li, #prices li {
+    margin-bottom: 10px; /* adds space between list items in timeline and more */
+}
+.question {
+    font-weight: bold; /* bolds the question */
+    font-size: 18px; /* enlarges question size */
+}
+td, th {
+    border: 1px solid black; /* puts border in table */
+    padding: 15px; /* puts space in table cells */
+}
+th {
+    background-color: #bcd45c; /* changes table header bg color */
+    font-size: 20px; /* bigger font for th */
+}
+table {
+    border-collapse: collapse; /* makes single borders around table cells */
+}
+table img {
+    max-width: 100%; /* makes images in tables smaller */
+}
+.testimonial img {
+    max-width: 20%; /* makes image smaller */
+    float: left; /* puts image next to testimonial */
+    padding: 10px; /* space around the testimonial */
+}
+/* code borrowed from https://www.w3docs.com/snippets/css/how-to-vertically-align-text-next-to-an-image.html to center testimonial next to image */
+.testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+/* end borrowed code */
+.menu-table {
+    border: 2px dashed #fa9305; /* border around various menus */
+    padding: 10px; /* space btwn border and menu */
+    margin-bottom: 10px; /* space between each menu border */
+}
+.menu-table h1 {
+    text-align: center; /* centers titles above menus */
+    font-size: 40px; /* makes menu titles bigger */
+    font-family: 'Brush Script MT', cursive; /* cursive fonts for menu titles */
+}
+.menu-table table {
+    width: 90%; /* makes table fill page width almost */
+    margin: 0px auto; /* centers menu table */
+}
+.menu-table th {
+    background-color: #fa9305; /* sets bg color of table headers for menu */
+}
+.menu-table td {
+    min-width: 200px; /* so td isn't too narrow */
+}
+.computerprice th {
+    background-color: #05a2f9; /* sets bg color of table headers for computer repair prices */
+}
+.contact img {
+    width: 30px; /* fixed h and w for contact icons */
+    height: 30px;
+    margin-right: 10px; /* margin so images are indented */
+    vertical-align: middle; /* vertically aligned with email address, etc. */
+}
+.contact li {
+    list-style-type: none; /* no bullets for contact info */
+}
+.price tr:nth-child(even) img {
+    max-width: 47%; /* shows the smaller versions of the photos to be smaller to scale! */
+}
+#latest-side img {
+    max-width: 100%; /* latest image in aside takes up 100% container width */
+}
+#flexbox-home-side {
+    border-top: 1px dashed black; /* border above the aside b/c of vertical block layout */
+    margin-left: 10px; /* margin btwn left side of page and aside content */
+}
+.addbutton {
+    height: 20px; /* fixed height for add button to list */
+    vertical-align: middle; /* centers it with text */
+}
+.removebutton {
+    /*display: none;*/ /* auto to not show */
+    height: 10px; /* fixed h */
+    vertical-align: middle; /* vertically align with Picture ID */
+    margin-right: 10px; /* space btwn Pic. ID and button */
+}
+#listtable tr:last-of-type td {
+    text-align: right; /* aligns total price to right */
+}
+#mainlistwrap, #listwrap, #emptylist {
+    display: none; /* sets the overall containers for the picture list and empty list message to auto hide */
+}
+.scrolltable {
+    overflow-x: scroll; /* lets the tables be scrolled horizontally when they are too wide */
+}
+#listtable tr td:first-child {
+    min-width: 200px; /* sets the min width for the picture list so the x doesn't wrap to next line */
+}
+table tr:hover {
+    background-color: grey; /* highlight color on hover for tr */
+}
+/* ***** removed feature *****
+#savedplacebox {
+    position: fixed; saved place alert box fixed pos.
+    bottom: 10px; fixed sitance from bottom and right
+    right: 10px;
+    width: 75%; 75% width on mobile screens
+    height: 60px; fixed height
+    padding-top: 35px; space on top so text isn't touching top
+    background-color: #61b15a; color of the box to match nav bar and footer
+    color: white; white text color
+    border: 1px solid black; border around the box to set it apart
+    border-radius: 5px;
+    display: none; auto hide until needed
+    text-align: center; center text in the box
+}
+*/
+/* Safari, Chrome, and Opera */
+@-webkit-keyframes flashborder {
+    0% {border: 3px dashed #0874fc;} /* border */
+    100% {border: 3px solid #0874fc;} /* no border */
+}
+/* Firefox */
+@-moz-keyframes flashborder {
+    0% {border: 3px dashed #0874fc;} /* border */
+    100% {border: 3px solid #0874fc;} /* no border */
+}
+@keyframes flashborder {
+    0% {border: 3px dashed #0874fc;} /* border */
+    100% {border: 3px solid #0874fc;} /* no border */
+}
+#sale {
+    padding: 10px; 
+    border: 3px dashed #0874fc; /* fallback */
+    animation: flashborder 2s infinite;
+    margin: 10px; /* so the border doesn't press against the edge of the viewport */
+}
+/* does not work :(
+Firefox
+progress::-moz-progress-bar {
+    background: orange;
+}
+Safari, Chrome, and Opera
+progress::-webkit-progress-value {
+    background: orange; 
+}
+progress::-webkit-progress-bar {
+    background: orange; 
+}
+Internet Explorer
+#sale progress {
+    color: orange;
+}
+*/
+#button {
+    margin: 0px auto; /* centers button container */
+    width: 100%; /* container takes up full width */
+    max-width: 250px; /* container element won't be wider than 250px */
+}
+#orderphoto {
+    height: 50px; /* fixed height of button */
+    width: 100%; /* button fills up container */
+    background-color: #bcd45c; /* bg of button */
+    border-radius: 10px; /* rounds corners of button */
+    color: white; /* sets text color of button */
+    font-size: 10pt; /* font size of button text */
+}
+#gallerypics {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gal-cell {
+    width: 100%;
+}
+.gal-cell img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+
+
+/* New */
+#photo-viewer-outer-wrap div {
+    display: block;
+}
+#photo-viewer-inner-wrap-left img {
+    max-width: 100%;
+}
+#photo-viewer-inner-wrap-right img {
+    display: none;
+}
+#left-arrow {
+    float: left;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+#right-arrow {
+    float: left;
+    width: 30px;
+    margin-right: 10px;
+}
+#adddialogwrap {
+    display: none;
+}
+#selectimg {
+    max-width: 300px;
+    float: right;
+    margin-right: 20px;
+}
+.validation {
+    display: none;
+    color: red;
+}

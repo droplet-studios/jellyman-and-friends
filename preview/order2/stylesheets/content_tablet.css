@@ -1,0 +1,19 @@
+.testimonial img {
+    max-width: 10%; /* makes testimonial image smaller realtive to screen size */
+}
+/* ***** removed feature *****
+#savedplacebox {
+    width: 50%; makes box alerting saved place half width of screen
+}
+*/
+#orderphoto {
+    font-size: 20pt; /* font size of button text */
+}
+.gal-cell {
+    width: 50%;
+}
+
+/* NEW */
+#photo-viewer-inner-wrap-left {
+    margin-right: 10px;
+}

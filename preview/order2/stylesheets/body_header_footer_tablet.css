@@ -1,0 +1,9 @@
+.pageimage {
+    object-fit: cover; /* sets fit setting for header image as cover to crop it */
+    object-position: 0 40%; /* moves the header image down by 40% vertically */
+    width: 100%; /* makes header image take up page width */
+    height: 300px; /* sets height of header image as 300px */
+}
+.pagetitle {
+    transform: translate(-50%, -40%); /* centers page title over image, shifts it up 40% */
+}
